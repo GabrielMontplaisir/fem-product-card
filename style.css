@@ -1,0 +1,260 @@
+/* :root {
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #f7df1eaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+} */
+
+:root {
+  --clr-primary-dark: hsl(158, 36%, 37%);
+  --clr-primary-light: hsl(30, 38%, 92%);
+
+  --clr-neutral-dark-blue: hsl(212, 21%, 14%);
+  --clr-neutral-gray-blue: hsl(228, 12%, 48%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  --ff-primary: 'Montserrat', sans-serif;
+  --ff-secondary: 'Fraunces', sans-serif;
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 500;
+  --fw-bold: 700;
+
+  --fs-paragraph: 14px;
+  --fs-heading: 32px;
+}
+
+/* Box Sizing Rule */
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeSpeed;
+  background-color: var(--clr-primary-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-neutral-dark-blue);
+  margin: 25px 0;
+  font-size: var(--fs-heading);
+}
+
+.preview {
+  display: inherit;
+  border-radius: .75rem;
+  width: 62vh;
+  height: 50vh;
+  overflow: hidden;
+  background-color: var(--clr-neutral-white);
+  color:var(--clr-neutral-gray-blue);
+  font-size: var(--fs-paragraph);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+}
+
+.preview img {
+  flex: 1;
+}
+
+.info {
+  flex: 1;
+  position:relative;
+  margin: 40px;
+}
+
+.type {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.description {
+  line-height: 2;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin: 25px 0;
+}
+
+.newprice {
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-heading);
+  color: var(--clr-primary-dark);
+  padding-right: 25px;
+}
+
+.fullprice {
+  text-decoration: line-through;
+}
+
+button {
+  border: none;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom:0;
+  width: 100%;
+  height: 50px;
+  border-radius: .75rem;
+  background-color: var(--clr-primary-dark);
+  color: var(--clr-neutral-white);
+  font-weight: var(--fw-bold);
+  padding: 5px 10px;
+}
+
+button > .icon {
+  background: url(./images/icon-cart.svg) no-repeat;
+  text-align: center;
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+  width: auto;
+  height:auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
