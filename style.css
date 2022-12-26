@@ -1,104 +1,12 @@
-/* :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vanilla:hover {
-  filter: drop-shadow(0 0 2em #f7df1eaa);
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+/* **************** */
+/* Variables */
+/* **************** */
 
 :root {
   --clr-primary-dark: hsl(158, 36%, 37%);
   --clr-primary-light: hsl(30, 38%, 92%);
+
+  --clr-primary-dark-hover: hsl(158, 36%, 15%); 
 
   --clr-neutral-dark-blue: hsl(212, 21%, 14%);
   --clr-neutral-gray-blue: hsl(228, 12%, 48%);
@@ -111,12 +19,17 @@ button:focus-visible {
 
   --fw-regular: 500;
   --fw-bold: 700;
-
-  --fs-paragraph: 14px;
-  --fs-heading: 32px;
+  
+  --fs-small: .685rem;
+  --fs-paragraph: .875rem;
+  --fs-heading: 2rem;
 }
 
-/* Box Sizing Rule */
+/* **************** */
+/* CSS Reset */
+/* **************** */
+
+/* Box Sizing */
 *,
 *::before,
 *::after {
@@ -125,43 +38,98 @@ button:focus-visible {
   box-sizing: border-box;
 }
 
+/* Remove Margins */
 * {
   margin: 0;
   padding: 0;
   font: inherit;
 }
 
+/* Make height full monitor height */
+html,
+body {
+  min-height: 100vh;
+}
+
+/* Default line height & font smoothing */
+body {
+  line-height: 1.5;
+}
+
+/* Remove list bullets */
 ul[role="list"],
 ol[role="list"] {
   list-style: none;
 }
 
+/* Make scrolling smooth when clicking an anchor */
 html:focus-within {
   scroll-behavior: smooth;
 }
+
+/* Match image width */
+img, 
+picture, 
+video, 
+canvas, 
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove bult-in form typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* Maintain style even if the text is too long */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* .sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+} */
+
+/* **************** */
+/* End of CSS Reset */
+/* **************** */
 
 body {
   text-rendering: optimizeSpeed;
   background-color: var(--clr-primary-light);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  justify-content: center;
 }
 
-h1 {
-  font-family: var(--ff-secondary);
-  color: var(--clr-neutral-dark-blue);
-  margin: 25px 0;
-  font-size: var(--fs-heading);
-}
+/* Card Content */
 
-.preview {
-  display: inherit;
+main {
+  display: flex;
+  max-width: 600px;
   border-radius: .75rem;
-  width: 62vh;
-  height: 50vh;
   overflow: hidden;
   background-color: var(--clr-neutral-white);
   color:var(--clr-neutral-gray-blue);
@@ -170,79 +138,88 @@ h1 {
   font-weight: var(--fw-regular);
 }
 
-.preview img {
-  flex: 1;
+/* Picture */
+
+picture {
+  flex-basis: 50%;
 }
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Information */
 
 .info {
-  flex: 1;
-  position:relative;
-  margin: 40px;
+  flex-basis: 50%;
+  padding: 30px;
 }
 
-.type {
+.category {
   letter-spacing: 5px;
   text-transform: uppercase;
 }
 
-.description {
-  line-height: 2;
+h1 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-neutral-dark-blue);
+  margin: 25px 0;
+  font-size: var(--fs-heading);
+  line-height: 1;
 }
 
-.price {
+.description {
+  line-height: 1.75;
+}
+
+.price-container {
   display: flex;
   align-items: center;
   margin: 25px 0;
+  gap: 20px;
 }
 
-.newprice {
+.price-container p {
   font-family: var(--ff-secondary);
   font-size: var(--fs-heading);
   color: var(--clr-primary-dark);
-  padding-right: 25px;
-}
-
-.fullprice {
-  text-decoration: line-through;
 }
 
 button {
-  border: none;
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom:0;
   width: 100%;
-  height: 50px;
+  gap: 10px;
   border-radius: .75rem;
   background-color: var(--clr-primary-dark);
   color: var(--clr-neutral-white);
   font-weight: var(--fw-bold);
-  padding: 5px 10px;
+  padding: 14px;
+  cursor: pointer;
 }
 
-button > .icon {
-  background: url(./images/icon-cart.svg) no-repeat;
-  text-align: center;
-  margin-right: 10px;
+button:hover {
+  background-color: var(--clr-primary-dark-hover);
+}
+
+button img {
   width: 15px;
-  height: 15px;
-
 }
 
-a:not([class]) {
-  text-decoration-skip-ink: auto;
+/* .attribution {
+  font-size: var(--fs-small);
+  text-align: center;
 }
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
 
-img,
-picture,
-svg {
-  max-width: 100%;
-  display: block;
-  width: auto;
-  height:auto;
-}
+/* **************** */
+/* Media Queries */
+/* **************** */
 
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -256,5 +233,22 @@ svg {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+
+  main {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .info {
+    padding: 20px;
+  }
+
+  h1 {
+    margin: 10px 0;
+    line-height: 1;
   }
 }
