@@ -14,7 +14,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-90sBljPQFV](https://www.frontendmentor.io/solutions/product-preview-card-component-90sBljPQFV)
 - Live Site URL: [https://gabrielmontplaisir.github.io/frontend-mentor/](https://gabrielmontplaisir.github.io/frontend-mentor/)
 
 ## Built with
@@ -31,7 +31,7 @@ As this was my first challenge for Frontend Mentor, I admittedly thought reprodu
 
 ## Continued development
 
-December 26, 2022 (v1): I finally finished creating the mobile version, and I believe this is as close as I will get to the final product. I'm not sure whether the following is "correct" usage of `aria-label` however:
+**December 26, 2022 (v1):** I finally finished creating the mobile version, and I believe this is as close as I will get to the final product. I'm not sure whether the following is "correct" usage of `aria-label` however:
 
 ```
 <del><span aria-label="Previous Price">$169.99</span></del>
@@ -39,9 +39,9 @@ December 26, 2022 (v1): I finally finished creating the mobile version, and I be
 
 My other challenge seems to revolve around when to transition to the mobile version of the component. It's fairly obvious that 375px is too small as reducing the screen size really crunches the picture and the writing. Perhaps as soon as the screen reaches 600px, then it should transition to mobile?
 
-December 26, 2022 (v2): I added a <span></span> to the `aria-label` as I got an HTML validation error. Hoping this will solve the problem. Otherwise, I did comment out an `.sr-only` class in my css file. I will probably use that. I also made the media query transition to the mobile version at 600px. I couldn't stand the crunching!
+**December 26, 2022 (v2):** I added a <span></span> to the `aria-label` as I got an HTML validation error. Hoping this will solve the problem. Otherwise, I did comment out an `.sr-only` class in my css file. I will probably use that. I also made the media query transition to the mobile version at 600px. I couldn't stand the crunching!
 
-December 26, 2022 (v3): After a little bit of research, it's clear that `aria-label` should only be used on buttons or interactive elements, while an `.sr-only` class should be used on static elements. For that reason, I've gone ahead and made the switch.
+**December 26, 2022 (v3):** After a little bit of research, it's clear that `aria-label` should only be used on buttons or interactive elements, while an `.sr-only` class should be used on static elements. For that reason, I've gone ahead and made the switch.
 
 ## Useful resources
 
