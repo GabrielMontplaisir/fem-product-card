@@ -102,7 +102,7 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* .sr-only:not(:focus):not(:active) {
+.sr-only:not(:focus):not(:active) {
   clip: rect(0 0 0 0); 
   clip-path: inset(50%);
   height: 1px;
@@ -110,7 +110,7 @@ a:not([class]) {
   position: absolute;
   white-space: nowrap; 
   width: 1px;
-} */
+}
 
 /* **************** */
 /* End of CSS Reset */
