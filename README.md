@@ -6,7 +6,7 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 
 ## Newbie
 
-- [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/product-card)
+- [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/product-card) [Live](https://gabrielmontplaisir.github.io/frontend-mentor/product-card)
 
 ## Junior
 
