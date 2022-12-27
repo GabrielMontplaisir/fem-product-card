@@ -15,7 +15,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-90sBljPQFV](https://www.frontendmentor.io/solutions/product-preview-card-component-90sBljPQFV)
-- Live Site URL: [https://gabrielmontplaisir.github.io/frontend-mentor/product-card/](https://gabrielmontplaisir.github.io/frontend-mentor/)
+- Live Site URL: [https://gabrielmontplaisir.github.io/frontend-mentor/product-card/](https://gabrielmontplaisir.github.io/frontend-mentor/product-card)
 
 ## Built with
 
