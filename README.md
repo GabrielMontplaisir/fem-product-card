@@ -41,6 +41,8 @@ My other challenge seems to revolve around when to transition to the mobile vers
 
 December 26, 2022 (v2): I added a <span></span> to the `aria-label` as I got an HTML validation error. Hoping this will solve the problem. Otherwise, I did comment out an `.sr-only` class in my css file. I will probably use that. I also made the media query transition to the mobile version at 600px. I couldn't stand the crunching!
 
+December 26, 2022 (v3): After a little bit of research, it's clear that `aria-label` should only be used on buttons or interactive elements, while an `.sr-only` class should be used on static elements. For that reason, I've gone ahead and made the switch.
+
 ## Useful resources
 
 - After tackling this challenge myself, I decided to "search" for some previous solutions submitted by users on Frontend Mentors. I found a lot of helpful information from [vcarames](https://www.frontendmentor.io/profile/vcarames) on the following solution: [https://www.frontendmentor.io/solutions/product-preview-card-component-O-qdX1G_xZ](https://www.frontendmentor.io/solutions/product-preview-card-component-O-qdX1G_xZ)
