@@ -11,7 +11,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-bmPuV7LZQ5](https://www.frontendmentor.io/solutions/order-summary-component-bmPuV7LZQ5)
 - Live Site URL: [https://gabrielmontplaisir.github.io/frontend-mentor/order-summary-card/](https://gabrielmontplaisir.github.io/frontend-mentor/order-summary-card)
 
 ## Built with
