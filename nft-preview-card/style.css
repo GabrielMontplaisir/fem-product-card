@@ -1,0 +1,237 @@
+/* **************** */
+/* Variables */
+/* **************** */
+
+:root {
+  --clr-primary-blue: hsl(215, 51%, 70%);
+  --clr-primary-cyan: hsl(178, 100%, 50%);
+
+  --clr-neutral-main-bg: hsl(217, 54%, 11%);
+  --clr-neutral-card-bg: hsl(216, 50%, 16%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  --ff-primary: 'Outfit', sans-serif;
+  --ff-body: var(--ff-primary);
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+  
+  /* 18px */
+  --fs-paragraph: 1.1rem;
+}
+
+/* **************** */
+/* CSS Reset */
+/* **************** */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box; 
+  box-sizing: border-box;
+}
+
+/* Remove Margins */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Make height full monitor height */
+html,
+body {
+  min-height: 100vh;
+}
+
+/* Default line height & font smoothing */
+body {
+  line-height: 1.5;
+}
+
+/* Remove list bullets */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Make scrolling smooth when clicking an anchor */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Match image width */
+img, 
+picture, 
+video, 
+canvas, 
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Remove bult-in form typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* Maintain style even if the text is too long */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* **************** */
+/* End of CSS Reset */
+/* **************** */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-neutral-main-bg);
+}
+
+main {
+  background-color: var(--clr-neutral-card-bg);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 30px hsl(216, 54%, 5%);
+  font-family: var(--ff-body);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-paragraph);
+  color: var(--clr-primary-blue)
+}
+
+picture {
+  position: relative;
+  margin: 1.6rem;
+  border-radius: .5rem;
+  overflow: hidden;
+}
+
+.layer {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  opacity: 0;
+}
+
+.layer:hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.25s ease;
+}
+
+.description {
+  margin: 0 1.6rem 1.6rem 1.6rem;
+}
+
+.description > p {
+  padding: 1.1rem 0;
+  font-weight: var(--fw-light);
+}
+
+a {
+  color: var(--clr-neutral-white);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--clr-primary-cyan);
+}
+
+h1 {
+  font-size: 1.4rem;
+  font-weight: var(--fw-bold);
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsla(215, 51%, 70%, .3);
+  padding-bottom: 1.4rem;
+}
+
+.cost, .time {
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+
+.cost {
+  color: var(--clr-primary-cyan);
+  font-weight: var(--fw-bold);
+}
+
+.artist {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0 .5rem;
+  gap: 1rem;
+}
+
+.artist img {
+  width: 2rem;
+  border: 1px solid var(--clr-neutral-white);
+  border-radius: 50rem;
+}
+
+/* **************** */
+/* Media Queries */
+/* **************** */
+
+@media only screen and (max-width: 600px) {
+  main {
+    margin: 20px;
+  }
+}

@@ -7,13 +7,12 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - [Links](#links)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
 - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/qr-code-component-6fBL9y7IFt](https://www.frontendmentor.io/solutions/qr-code-component-6fBL9y7IFt)
 - Live Site URL: [https://gabrielmontplaisir.github.io/frontend-mentor/qr-code/](https://gabrielmontplaisir.github.io/frontend-mentor/qr-code)
 
 ## Built with
@@ -28,8 +27,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## What I learned
 
 I feel like I learned less for this challenge than my previous one. However, I did make things easier on myself by reusing pieces that I've built previously. As a result, this challenge took me a few hours as opposed to the initial few days that the Product Preview Component Card did.
-
-## Continued development
 
 ## Useful resources
 
