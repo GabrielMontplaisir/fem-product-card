@@ -148,7 +148,7 @@ main {
   color: var(--clr-primary-blue)
 }
 
-picture {
+.img-container {
   position: relative;
   margin: 1.6rem;
   border-radius: .5rem;
