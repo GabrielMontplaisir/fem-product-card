@@ -8,6 +8,7 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 
 - [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/product-card) ([Live](https://gabrielmontplaisir.github.io/frontend-mentor/product-card))
 - [QR Code Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/qr-code) ([Live](https://gabrielmontplaisir.github.io/frontend-mentor/qr-code))
+- [NFT Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/nft-preview-card) ([Live](https://gabrielmontplaisir.github.io/frontend-mentor/nft-preview-card))
 
 ## Junior
 
