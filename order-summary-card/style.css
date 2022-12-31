@@ -239,10 +239,6 @@ button:hover {
     background: no-repeat top / contain url("./images/pattern-background-desktop.svg") var(--clr-primary-pale);
   }
 
-  main {
-
-  }
-
   .info {
     padding: 3rem;
   }

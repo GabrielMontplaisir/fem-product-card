@@ -7,8 +7,6 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 - [Links](#links)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
-- [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Links
@@ -27,11 +25,11 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ## What I learned
 
-## Continued development
+I've learned that my monitors don´t always display colours properly. I designed 99% of the card until I realized there was a border-radius around the plan details... At least I caught it before I submitted the solution.
 
-## Useful resources
+This card felt a little easier in design than the NFT. Nonetheless, this one was fun because of the colours. I was also pretty afraid I was going to have to play with css styles to design the wavey background. Thankfully, they provided us with the svg.
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+As I usually work on my PC, I often design my projects with the desktop version in mind first. However, it became evident that the mobile version had a lot of changes. For that reason, I felt it was easier to "scale up" than to scale-down. I didn't have to play too much with the values. I simply copy/pasted the necessary desktop values into the media query.
 
 ## Author
 
