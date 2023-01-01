@@ -12,7 +12,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 ## Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/order-summary-component-bmPuV7LZQ5](https://www.frontendmentor.io/solutions/order-summary-component-bmPuV7LZQ5)
-- Live Site URL: [https://gabrielmontplaisir.github.io/frontend-mentor/order-summary-card/](https://gabrielmontplaisir.github.io/frontend-mentor/order-summary-card)
+- Live Site URL: [https://gabrielmontplaisir.com/frontend-mentor/newbie/order-summary-card/](https://gabrielmontplaisir.com/frontend-mentor/newbie/order-summary-card)
 
 ## Built with
 
@@ -33,5 +33,6 @@ As I usually work on my PC, I often design my projects with the desktop version 
 
 ## Author
 
+- Website - [https://gabrielmontplaisir.com](https://gabrielmontplaisir.com)
 - Frontend Mentor - [@GabrielMontplaisir](https://www.frontendmentor.io/profile/GabrielMontplaisir)
 - LinkedIn - [@GabrielMontplaisir](https://www.linkedin.com/in/gabriel-montplaisir/)

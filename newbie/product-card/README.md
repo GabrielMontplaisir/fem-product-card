@@ -14,7 +14,7 @@ This is a solution to the [Product preview card component challenge on Frontend 
 ## Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/product-preview-card-component-90sBljPQFV](https://www.frontendmentor.io/solutions/product-preview-card-component-90sBljPQFV)
-- Live Site URL: [https://gabrielmontplaisir.github.io/frontend-mentor/product-card/](https://gabrielmontplaisir.github.io/frontend-mentor/product-card)
+- Live Site URL: [https://gabrielmontplaisir.com/frontend-mentor/newbie/product-card/](https://gabrielmontplaisir.com/frontend-mentor/newbie/product-card)
 
 ## Built with
 
@@ -48,5 +48,6 @@ My other challenge seems to revolve around when to transition to the mobile vers
 
 ## Author
 
+- Website - [https://gabrielmontplaisir.com](https://gabrielmontplaisir.com)
 - Frontend Mentor - [@GabrielMontplaisir](https://www.frontendmentor.io/profile/GabrielMontplaisir)
 - LinkedIn - [@GabrielMontplaisir](https://www.linkedin.com/in/gabriel-montplaisir/)

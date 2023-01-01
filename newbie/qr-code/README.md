@@ -13,7 +13,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ## Links
 
 - Solution URL: [https://www.frontendmentor.io/solutions/qr-code-component-6fBL9y7IFt](https://www.frontendmentor.io/solutions/qr-code-component-6fBL9y7IFt)
-- Live Site URL: [https://gabrielmontplaisir.github.io/frontend-mentor/qr-code/](https://gabrielmontplaisir.github.io/frontend-mentor/qr-code)
+- Live Site URL: [https://gabrielmontplaisir.com/frontend-mentor/newbie/qr-code/](https://gabrielmontplaisir.com/frontend-mentor/newbie/qr-code)
 
 ## Built with
 
@@ -34,5 +34,6 @@ I feel like I learned less for this challenge than my previous one. However, I d
 
 ## Author
 
+- Website - [https://gabrielmontplaisir.com](https://gabrielmontplaisir.com)
 - Frontend Mentor - [@GabrielMontplaisir](https://www.frontendmentor.io/profile/GabrielMontplaisir)
 - LinkedIn - [@GabrielMontplaisir](https://www.linkedin.com/in/gabriel-montplaisir/)
