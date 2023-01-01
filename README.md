@@ -6,10 +6,10 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 
 ## Newbie
 
-- [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/product-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/product-card))
-- [QR Code Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/qr-code) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/qr-code))
-- [NFT Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/nft-preview-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/nft-preview-card))
-- [Order Summary card](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/order-summary-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/order-summary-card))
+- [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/product-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/product-card))
+- [QR Code Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/qr-code) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/qr-code))
+- [NFT Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/nft-preview-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/nft-preview-card))
+- [Order Summary card](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/order-summary-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/order-summary-card))
 
 ## Junior
 
