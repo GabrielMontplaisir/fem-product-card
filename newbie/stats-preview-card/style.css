@@ -71,7 +71,7 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
 }
 
 /* Remove bult-in form typography */
@@ -134,36 +134,39 @@ body {
   background-color: var(--clr-primary-mainbg);
 }
 
-strong {
+em {
   color: var(--clr-primary-accent);
 }
 
 main {
   display: flex;
-  width: 1080px;
+  width: 69rem;
   border-radius: 0.5rem;
   margin: 1rem;
   overflow: hidden;
-  background-color: var(--clr-primary-cardbg);
+  background: var(--clr-primary-cardbg);
   color: var(--clr-neutral-paragraph);
   font-size: var(--fs-paragraph);
   font-family: var(--ff-primary);
   font-weight: var(--fw-regular);
 }
 
+main > * {
+  flex-basis: 50%;
+}
+
 .info {
   display: flex;
-  flex: 1;
   flex-direction: column;
-  margin: 4rem;
-  padding-right: 2rem;
+  padding: 4rem;
+  padding-right: 6rem;
   line-height: 1.6;
 }
 
 h1 {
-  font-size: 2.1rem;
+  font-size: clamp(1.75rem, calc(1.05rem + 1.65vw), 2.1rem);
   line-height: 1.3;
-  padding: 0 0 1.75rem 0;
+  padding-bottom: 1.75rem;
   color: var(--clr-neutral-white);
   font-weight: var(--fw-bold);
 }
@@ -175,9 +178,6 @@ h1 {
   grid-template-rows: repeat(2, 0.5fr);
   column-gap: 2rem;
   margin-top: auto;
-}
-
-.stats h2 {
   color: var(--clr-neutral-white);
   font-weight: var(--fw-bold);
   font-size: 1.5rem;
@@ -197,6 +197,7 @@ picture {
 img {
   height: 100%;
   width: 100%;
+  object-fit: cover;
   mix-blend-mode: multiply;
   opacity: 0.75;
 }
@@ -205,34 +206,32 @@ img {
 /* Media Queries */
 /* **************** */
 
-@media (max-width: 990px) {
-  .info {
-    margin: auto 4rem;
+@media (max-width: 66em) {
+  .stats {
+    margin-top: 2.5rem;
   }
 }
 
-@media only screen and (max-width: 880px) {
+@media (max-width: 51.88em) {
   main {
     flex-direction: column-reverse;
-    width: 400px;
-    margin: 2rem;
+    width: 31.24rem;
+    margin: 1.5rem;
   }
 
   .info {
     text-align: center;
-    margin: 1.5em;
-    padding-right: 0;
+    padding: 1.75rem;
+    margin-top: 0.5rem;
   }
 
   h1 {
-    font-size: 1.75em;
-    padding: 1.25rem 0;
+    padding-bottom: 1.25rem;
   }
 
   .stats {
     display: flex;
     flex-direction: column;
-    margin-top: 2.5rem;
   }
 
   .stats p {
@@ -240,7 +239,7 @@ img {
   }
 
   .stats p:last-child {
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .stats {
