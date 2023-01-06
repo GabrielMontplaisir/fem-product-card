@@ -97,17 +97,17 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
-/* .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
-} */
+}
 
-/* @media (prefers-reduced-motion: reduce) {
+@media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
   }
