@@ -7,8 +7,6 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - [Links](#links)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
-- [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Links
@@ -22,18 +20,12 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [Vite](https://vitejs.dev/)
+- [Google Fonts](https://fonts.google.com/)
 
 ## What I learned
 
-## Continued development
-
-### Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+Setting `position: absolute` on the circle images (For the avatar picture & background circles) and `transform: transition()` them to the appropriate spot did the trick. However, I'm having a hard time to match them in their mobile version. I have a feeling it may be fixed using `clamp()`, but would have to play with it some more.
 
 ## Author
 
