@@ -128,6 +128,7 @@ a:not([class]) {
 
 body {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   background: var(--clr-neutral-headings);
