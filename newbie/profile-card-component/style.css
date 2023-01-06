@@ -1,0 +1,232 @@
+/* **************** */
+/* Variables */
+/* **************** */
+
+:root {
+  --clr-primary-cyan: hsl(185, 75%, 39%);
+  --clr-primary-dark-blue: hsl(229, 23%, 23%);
+  --clr-primary-gray-blue: hsl(227, 10%, 46%);
+
+  --clr-neutral-gray: hsla(0, 0%, 59%, 0.3);
+
+  --ff-primary: "Kumbh Sans", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* 18px */
+  --fs-paragraph: 1.125rem;
+}
+
+/* **************** */
+/* CSS Reset */
+/* **************** */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Remove Margins */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Make height full monitor height */
+html,
+body {
+  min-height: 100vh;
+}
+
+/* Default line height & font smoothing */
+body {
+  line-height: 1.5;
+}
+
+/* Remove list bullets */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Make scrolling smooth when clicking an anchor */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Match image width */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  /* height: auto; */
+}
+
+/* Remove bult-in form typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* Maintain style even if the text is too long */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* **************** */
+/* End of CSS Reset */
+/* **************** */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-primary-cyan);
+  overflow: hidden;
+  font-size: var(--fs-paragraph);
+  font-weight: var(--fw-regular);
+  font-family: var(--ff-primary);
+  color: var(--clr-primary-gray-blue);
+}
+
+.bg-circle-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transform: translate(-29%, -55%);
+}
+
+.bg-circle-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transform: translate(25%, 67%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: white;
+  margin: 1.5rem;
+  box-shadow: 0px 60px 100px 1px hsl(185, 75%, 30%);
+}
+
+main > p {
+  font-size: 0.9rem;
+  padding: 0.4rem 0 1rem 0;
+}
+
+.banner {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 4.5rem;
+}
+
+.profile-bg {
+  width: 100%;
+  object-fit: fill;
+}
+
+.profile-avatar {
+  position: absolute;
+  border-radius: 50%;
+  overflow: hidden;
+  transform: translate(0, 50%);
+  border: 5px solid white;
+}
+
+.name-age {
+  display: inherit;
+  gap: 0.5rem;
+}
+
+h1 {
+  color: var(--clr-primary-dark-blue);
+  font-weight: var(--fw-bold);
+}
+
+.stats {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(3, 0.5fr);
+  grid-template-rows: repeat(2, 0.1fr);
+  column-gap: 2rem;
+  border-top: 1px solid var(--clr-neutral-gray);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.stats span {
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-dark-blue);
+}
+
+.stats p {
+  font-size: 0.6rem;
+  letter-spacing: 0.1rem;
+}
+
+/* **************** */
+/* Media Queries */
+/* **************** */
+
+/* @media (max-width: 53.75em) {
+} */
