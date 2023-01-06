@@ -11,6 +11,7 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 - [NFT Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/nft-preview-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/nft-preview-card))
 - [Order Summary Card](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/order-summary-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/order-summary-card))
 - [Stats Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/stats-preview-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/stats-preview-card))
+- [Three Column Preview](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/three-column-preview) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/three-column-preview))
 
 ## Junior
 

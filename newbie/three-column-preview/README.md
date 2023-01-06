@@ -7,8 +7,6 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Links](#links)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
-- [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Links
@@ -21,18 +19,12 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
-- Mobile-first workflow
 - [Vite](https://vitejs.dev/)
 - [Google Fonts](https://fonts.google.com/)
 
 ## What I learned
 
-## Continued development
-
-## Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+This challenge was simpler than some of the previous ones I've attempted as the columns were pretty straightforward to build. I tried to make them as simple as possible while avoiding to repeat the css classes. Unfortunately, there's no way to make the `font-color` "inherit" each section's `bg-color`, and therefore I had to add three lines and specify each of the sections in my css. Thankfully, the variables came in handy.
 
 ## Author
 
