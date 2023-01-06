@@ -1,0 +1,231 @@
+/* **************** */
+/* Variables */
+/* **************** */
+
+:root {
+  --clr-primary-orange: hsl(31, 77%, 52%);
+  --clr-primary-cyan: hsl(184, 100%, 22%);
+  --clr-primary-dark: hsl(179, 100%, 13%);
+
+  --clr-neutral-paragraph: hsla(0, 0%, 100%, 0.75);
+  --clr-neutral-headings: hsl(0, 0%, 95%);
+
+  --ff-primary: "Lexend Deca", sans-serif;
+  --ff-secondary: "Big Shoulders Display", cursive;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  /* 15px */
+  --fs-paragraph: 0.938rem;
+}
+
+/* **************** */
+/* CSS Reset */
+/* **************** */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Remove Margins */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Make height full monitor height */
+html,
+body {
+  min-height: 100vh;
+}
+
+/* Default line height & font smoothing */
+body {
+  line-height: 1.5;
+}
+
+/* Remove list bullets */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Make scrolling smooth when clicking an anchor */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Match image width */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  /* height: auto; */
+}
+
+/* Remove bult-in form typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* Maintain style even if the text is too long */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* .sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+} */
+
+/* @media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* **************** */
+/* End of CSS Reset */
+/* **************** */
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--clr-neutral-headings);
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-paragraph);
+  color: var(--clr-neutral-paragraph);
+}
+
+main {
+  display: flex;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 58.5rem;
+  margin: 1.5rem;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 3.25rem;
+}
+
+img {
+  width: 4rem;
+}
+
+h2 {
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-bold);
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  padding: 1.25rem 0;
+}
+
+p {
+  line-height: 1.75;
+  padding-bottom: 5rem;
+  margin-bottom: auto;
+}
+
+button {
+  border: 2px solid var(--clr-neutral-headings);
+  background-color: var(--clr-neutral-headings);
+  border-radius: 2rem;
+  padding: 0.7rem 1.75rem;
+  margin-right: auto;
+}
+
+.sedans {
+  background: var(--clr-primary-orange);
+}
+
+.sedans button {
+  color: var(--clr-primary-orange);
+}
+
+.suv {
+  background: var(--clr-primary-cyan);
+}
+
+.suv button {
+  color: var(--clr-primary-cyan);
+}
+
+.luxury {
+  background: var(--clr-primary-dark);
+}
+
+.luxury button {
+  color: var(--clr-primary-dark);
+}
+
+button:hover {
+  background: inherit;
+  color: var(--clr-neutral-headings);
+  cursor: pointer;
+}
+
+h2 {
+  color: var(--clr-neutral-headings);
+}
+
+/* **************** */
+/* Media Queries */
+/* **************** */
+
+@media (max-width: 53.75em) {
+  main {
+    flex-direction: column;
+    width: 31.24rem;
+  }
+
+  section {
+    padding: 3rem;
+  }
+
+  p {
+    padding-bottom: 1.75rem;
+  }
+}
