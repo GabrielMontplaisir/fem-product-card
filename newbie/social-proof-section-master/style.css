@@ -1,0 +1,317 @@
+/* **************** */
+/* Variables */
+/* **************** */
+
+:root {
+  --clr-primary-dark-magenta: hsl(300, 43%, 22%);
+  --clr-primary-soft-pink: hsl(333, 80%, 67%);
+
+  --clr-neutral-dark-gray-magenta: hsl(303, 10%, 53%);
+  --clr-neutral-light-gray-magenta: hsl(300, 24%, 96%);
+  --clr-neutral-white: hsl(0, 0%, 100%);
+
+  --ff-primary: "League Spartan", sans-serif;
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* 15px */
+  --fs-paragraph: 0.938rem;
+}
+
+/* **************** */
+/* CSS Reset */
+/* **************** */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Remove Margins */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Make height full monitor height */
+html,
+body {
+  min-height: 100vh;
+}
+
+/* Default line height & font smoothing */
+body {
+  line-height: 1.5;
+}
+
+/* Remove list bullets */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Make scrolling smooth when clicking an anchor */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Match image width */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  /* height: auto; */
+}
+
+/* Remove bult-in form typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* Maintain style even if the text is too long */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* **************** */
+/* End of CSS Reset */
+/* **************** */
+
+body {
+  background: var(--clr-neutral-white);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-paragraph);
+  font-weight: var(--fw-regular);
+  color: var(--clr-primary-dark-magenta);
+  padding: 1.5rem;
+  text-align: center;
+  background-image: url(./images/bg-pattern-top-mobile.svg),
+    url(./images/bg-pattern-bottom-mobile.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top left, bottom right;
+}
+
+.top-section {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  max-width: 31.25rem;
+  margin: auto;
+  padding: 3.75rem 2rem 1.7rem;
+  font-size: 2.5rem;
+  line-height: 0.75;
+  letter-spacing: -0.05rem;
+  font-weight: var(--fw-bold);
+}
+
+.info p {
+  max-width: 31.25rem;
+  margin: auto;
+  color: var(--clr-neutral-dark-gray-magenta);
+  font-size: 1.2rem;
+  line-height: 1.25;
+  letter-spacing: -0.05rem;
+  font-weight: var(--fw-medium);
+  padding-bottom: 2rem;
+}
+
+.ratings-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--fw-bold);
+  font-size: 1rem;
+  gap: 1rem;
+  padding-bottom: 3rem;
+}
+
+.rating {
+  max-width: 26.563rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem;
+  background: var(--clr-neutral-light-gray-magenta);
+  border-radius: 0.5rem;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+figure {
+  max-width: 21.88rem;
+  width: 100%;
+  background: var(--clr-primary-dark-magenta);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+figcaption {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+figcaption img {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+figcaption h2 {
+  color: var(--clr-neutral-light-gray-magenta);
+  font-weight: var(--fw-bold);
+}
+
+figcaption span {
+  color: var(--clr-primary-soft-pink);
+}
+
+blockquote {
+  color: var(--clr-neutral-light-gray-magenta);
+  font-weight: var(--fw-medium);
+  text-align: start;
+}
+
+/* **************** */
+/* Media Queries */
+/* **************** */
+
+/* At 900px */
+@media (min-width: 75em) {
+  body {
+    background-image: url(./images/bg-pattern-top-desktop.svg),
+      url(./images/bg-pattern-bottom-desktop.svg);
+    padding: 4.5rem 7rem;
+  }
+
+  .top-section {
+    flex-direction: row;
+    text-align: start;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    padding: 0 3rem 2rem 0;
+  }
+
+  .info p {
+    padding-right: 4rem;
+  }
+
+  .ratings-container {
+    width: 33rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+  }
+
+  .rating {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1rem 2rem;
+  }
+
+  .rating:first-child {
+    align-self: flex-start;
+  }
+
+  .rating:last-child {
+    align-self: flex-end;
+  }
+
+  .stars {
+    padding-bottom: 0;
+  }
+
+  .testimonials-container {
+    min-height: 17rem;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-self: center;
+  }
+
+  figure {
+    max-height: 14rem;
+  }
+
+  figure:first-child {
+    align-self: flex-start;
+  }
+
+  figure:last-child {
+    align-self: flex-end;
+  }
+}
