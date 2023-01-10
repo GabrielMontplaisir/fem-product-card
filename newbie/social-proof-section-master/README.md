@@ -7,13 +7,11 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 - [Links](#links)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
-- [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/social-proof-section-i0NudbcTxf](https://www.frontendmentor.io/solutions/social-proof-section-i0NudbcTxf)
 - Live Site URL: [https://gabrielmontplaisir.com/frontend-mentor/newbie/social-proof-section-master](https://gabrielmontplaisir.com/frontend-mentor/newbie/social-proof-section-master)
 
 ## Built with
@@ -27,15 +25,13 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ## What I learned
 
-I opted to design this webpage with a mobile-first workflow. I feel like it was more work in the long run, but it worked out. I feel like the desktop design is "very" different than the design. May have to play with it some more.
+I opted to design this webpage with a mobile-first workflow. I feel like it was more work in the long run, but it worked out.
 
 Learned that `letter-spacing` can have negative values to bring the letters much closer together.
 
-Played a lot with the concept of `max-width` for mobile as I didn't like the max-width for the background for the rating. Learned how to create figures / blockquotes.
+I played a lot with the concept of `max-width` for mobile as I didn't like the `max-width` for the background for the rating on medium screen sizes (between 500px & 1100px particularly).
 
-Really had to play with flexboxes for this challenge. I really enjoy Flexbox as a tool, but I feel like I'm relying on it too much. Wondering if there's another way to approach this challenge which would be easier w/ Gridbox for example. Or perhaps more traditional HTML?
-
-## Continued development
+I feel like I heavily relied on flexbox for this challenge, and I'm not sure that was the best way to approach it. I am wondering if there's another way to approach this challenge that would be easier. Or perhaps more traditional HTML?
 
 ## Author
 

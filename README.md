@@ -13,6 +13,7 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 - [Stats Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/stats-preview-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/stats-preview-card))
 - [Three Column Preview](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/three-column-preview) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/three-column-preview))
 - [Profile Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/profile-card-component) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/profile-card-component))
+- [Social Proof Section](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/social-proof-section-master) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/social-proof-section-master))
 
 ## Junior
 
