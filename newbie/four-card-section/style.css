@@ -1,0 +1,244 @@
+/* **************** */
+/* Variables */
+/* **************** */
+
+:root {
+  --clr-primary-red: hsl(0, 78%, 62%);
+  --clr-primary-cyan: hsl(180, 62%, 55%);
+  --clr-primary-orange: hsl(34, 97%, 64%);
+  --clr-primary-blue: hsl(212, 86%, 64%);
+
+  --clr-neutral-dark-blue: hsl(234, 12%, 34%);
+  --clr-neutral-gray-blue: hsl(229, 6%, 66%);
+  --clr-neutral-light-gray: hsl(0, 0%, 98%);
+
+  --ff-primary: "Poppins", sans-serif;
+
+  --fw-light: 200;
+  --fw-regular: 400;
+  --fw-bold: 600;
+
+  /* 15px */
+  --fs-paragraph: 0.938rem;
+}
+
+/* **************** */
+/* CSS Reset */
+/* **************** */
+
+/* Box Sizing */
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Remove Margins */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Make height full monitor height */
+html,
+body {
+  min-height: 100vh;
+}
+
+/* Default line height & font smoothing */
+body {
+  line-height: 1.5;
+}
+
+/* Remove list bullets */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Make scrolling smooth when clicking an anchor */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Match image width */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  /* height: auto; */
+}
+
+/* Remove bult-in form typography */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  border: none;
+}
+
+/* Maintain style even if the text is too long */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* **************** */
+/* End of CSS Reset */
+/* **************** */
+
+body {
+  font-family: var(--ff-primary);
+  background: var(--clr-neutral-light-gray);
+  font-size: var(--fs-paragraph);
+  font-weight: var(--fw-regular);
+  color: var(--clr-neutral-gray-blue);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+h1 {
+  font-size: clamp(1.6em, calc(1.4rem + 0.75vw), 2.5rem);
+  font-weight: var(--fw-light);
+  color: var(--clr-neutral-dark-blue);
+  padding-bottom: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+em {
+  font-weight: var(--fw-bold);
+}
+
+main > p {
+  font-size: clamp(0.938em, calc(0.8rem + 0.75vw), 1.1rem);
+  max-width: 34.25rem;
+  padding-bottom: 4rem;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.middle-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  max-width: 21.25rem;
+  text-align: start;
+  font-size: 0.8rem;
+  background: white;
+  border-radius: 0.3rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 20px hsl(210, 27%, 81%);
+}
+
+h2 {
+  color: var(--clr-neutral-dark-blue);
+  font-weight: var(--fw-bold);
+  font-size: 1.2rem;
+  padding-bottom: 0.25rem;
+}
+
+.card img {
+  margin: 2rem 0.25rem 0.25rem auto;
+}
+
+.supervisor {
+  border-top: 4px solid var(--clr-primary-cyan);
+}
+
+.team {
+  border-top: 4px solid var(--clr-primary-red);
+}
+
+.karma {
+  border-top: 4px solid var(--clr-primary-orange);
+}
+
+.calculator {
+  border-top: 4px solid var(--clr-primary-blue);
+}
+
+/* **************** */
+/* Media Queries */
+/* **************** */
+
+@media (min-width: 48rem) {
+  .calculator {
+    order: 1;
+  }
+
+  .middle-cards {
+    flex-direction: row;
+    order: 2;
+  }
+}
+
+@media (min-width: 70.75em) {
+  .card-container {
+    align-items: center;
+  }
+  .calculator {
+    order: 2;
+  }
+
+  .middle-cards {
+    flex-direction: column;
+    order: 1;
+  }
+}

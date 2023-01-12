@@ -6,14 +6,15 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 
 ## Newbie
 
-- [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/product-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/product-card))
-- [QR Code Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/qr-code) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/qr-code))
+- [Four Card Feature Section](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/four-card-section) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/four-card-section))
 - [NFT Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/nft-preview-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/nft-preview-card))
 - [Order Summary Card](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/order-summary-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/order-summary-card))
+- [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/product-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/product-card))
+- [Profile Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/profile-card-component) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/profile-card-component))
+- [QR Code Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/qr-code) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/qr-code))
+- [Social Proof Section](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/social-proof-section-master) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/social-proof-section-master))
 - [Stats Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/stats-preview-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/stats-preview-card))
 - [Three Column Preview](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/three-column-preview) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/three-column-preview))
-- [Profile Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/profile-card-component) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/profile-card-component))
-- [Social Proof Section](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/social-proof-section-master) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/social-proof-section-master))
 
 ## Junior
 
