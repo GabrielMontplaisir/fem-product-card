@@ -6,19 +6,19 @@
   --clr-primary-pale: hsl(225, 100%, 94%);
   --clr-primary-bright: hsl(245, 75%, 52%);
 
-  --clr-primary-bright-hover:hsl(245, 75%, 65%);
+  --clr-primary-bright-hover: hsl(245, 75%, 65%);
 
   --clr-neutral-very-pale: hsl(225, 100%, 98%);
   --clr-neutral-desaturated: hsl(224, 23%, 55%);
   --clr-neutral-dark: hsl(223, 47%, 23%);
 
-  --ff-primary: 'Red Hat Display', sans-serif;
+  --ff-primary: "Red Hat Display", sans-serif;
   --ff-body: var(--ff-primary);
 
   --fw-medium: 500;
   --fw-bold: 700;
   --fw-black: 900;
-  
+
   /* 16px */
   --fs-paragraph: 1rem;
 }
@@ -31,8 +31,8 @@
 *,
 *::before,
 *::after {
-  -moz-box-sizing: border-box; 
-  -webkit-box-sizing: border-box; 
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -66,10 +66,10 @@ html:focus-within {
 }
 
 /* Match image width */
-img, 
-picture, 
-video, 
-canvas, 
+img,
+picture,
+video,
+canvas,
 svg {
   display: block;
   max-width: 100%;
@@ -101,12 +101,12 @@ a:not([class]) {
 }
 
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
 }
 
@@ -130,7 +130,8 @@ a:not([class]) {
 /* **************** */
 
 body {
-  background: no-repeat top / contain url("./images/pattern-background-mobile.svg") var(--clr-primary-pale);
+  background: no-repeat top / contain
+    url("./images/pattern-background-mobile.svg") var(--clr-primary-pale);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,16 +141,16 @@ main {
   display: inherit;
   flex-direction: column;
   justify-content: center;
-  width: 450px;
+  width: 28.125rem;
   border-radius: 1rem;
   overflow: hidden;
-  box-shadow: 0 0 50px 1px hsla(224, 23%, 55%, .5);
+  box-shadow: 0 0 50px 1px hsla(224, 23%, 55%, 0.5);
   font-family: var(--ff-primary);
   font-size: var(--fs-paragraph);
   font-weight: var(--fw-medium);
   color: var(--clr-neutral-desaturated);
 
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .info {
@@ -172,7 +173,7 @@ h1 {
 a {
   font-weight: var(--fw-bold);
   color: var(--clr-primary-bright);
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 a:hover {
@@ -190,12 +191,12 @@ h2 {
   align-items: center;
   justify-content: center;
   padding: 1.5rem 0;
-  background-color: hsla(225, 100%, 94%, .3);
-  border-radius: .75rem;
+  background-color: hsla(225, 100%, 94%, 0.3);
+  border-radius: 0.75rem;
 }
 
 .plan {
-  font-size: .9rem;
+  font-size: 0.9rem;
   margin: 0 2rem 0 1.4rem;
 }
 
@@ -203,12 +204,12 @@ button {
   background-color: var(--clr-primary-bright);
   color: var(--clr-neutral-very-pale);
   width: 100%;
-  border-radius: .5rem;
-  padding: .8rem 0;
-  margin: .6rem 0;
+  border-radius: 0.5rem;
+  padding: 0.8rem 0;
+  margin: 0.6rem 0;
   font-weight: var(--fw-bold);
-  filter: drop-shadow(0 10px 10px hsla(245, 75%, 52%, .3));
-  font-size: .9rem;
+  filter: drop-shadow(0 10px 10px hsla(245, 75%, 52%, 0.3));
+  font-size: 0.9rem;
 }
 
 button:hover {
@@ -234,9 +235,10 @@ button:hover {
 /* Media Queries */
 /* **************** */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 37.5em) {
   body {
-    background: no-repeat top / contain url("./images/pattern-background-desktop.svg") var(--clr-primary-pale);
+    background: no-repeat top / contain
+      url("./images/pattern-background-desktop.svg") var(--clr-primary-pale);
   }
 
   .info {
@@ -257,6 +259,6 @@ button:hover {
   }
 
   a {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 }

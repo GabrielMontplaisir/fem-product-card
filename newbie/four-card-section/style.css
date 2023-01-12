@@ -218,7 +218,7 @@ h2 {
 /* Media Queries */
 /* **************** */
 
-@media (min-width: 48rem) {
+@media (min-width: 48em) {
   .calculator {
     order: 1;
   }
