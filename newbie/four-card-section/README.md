@@ -7,13 +7,11 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - [Links](#links)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
-- [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/four-card-feature-section-JkqD95lMAe](https://www.frontendmentor.io/solutions/four-card-feature-section-JkqD95lMAe)
 - Live Site URL: [https://gabrielmontplaisir.com/frontend-mentor/newbie/four-card-section](https://gabrielmontplaisir.com/frontend-mentor/newbie/four-card-section)
 
 ## Built with
@@ -28,11 +26,7 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 ## What I learned
 
-## Continued development
-
-## Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+This challenge worked very well and was quite easy. I used `clamp()` to auto-size my font appropriately, and then used `order` with my flexbox to move the cards around to get a nice 2x2 square at medium screen sizes (around 768px), and then to the appropriate spot again around 1140px.
 
 ## Author
 
