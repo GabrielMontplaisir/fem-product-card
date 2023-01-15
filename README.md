@@ -12,6 +12,7 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 - [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/product-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/product-card))
 - [Profile Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/profile-card-component) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/profile-card-component))
 - [QR Code Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/qr-code) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/qr-code))
+- [Single Price Grid Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/single-price-grid) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/single-price-grid))
 - [Social Proof Section](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/social-proof-section-master) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/social-proof-section-master))
 - [Stats Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/stats-preview-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/stats-preview-card))
 - [Three Column Preview](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/three-column-preview) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/three-column-preview))
