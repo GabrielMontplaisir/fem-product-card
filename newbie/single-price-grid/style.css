@@ -147,8 +147,7 @@ main {
 h1 {
   color: var(--clr-primary-cyan);
   font-weight: var(--fw-bold);
-  /* font-size: 1.25rem; */
-  font-size: clamp(1.25rem, calc(0.75rem + 0.6vw), 1.8rem);
+  font-size: clamp(1.25rem, calc(1rem + 0.6vw), 1.75rem);
 }
 
 h2 {
@@ -168,13 +167,12 @@ h3 {
 
 .description {
   color: var(--clr-neutral-gray-blue);
-  padding: 1.5rem;
+  padding: 1.5rem 1.5rem 2rem;
 }
 
 .description p {
-  line-height: 1.75;
+  line-height: 1.65;
   font-size: clamp(0.86rem, calc(0.65rem + 0.6vw), 1rem);
-  padding-bottom: 0.5rem;
 }
 
 .subscription {
@@ -227,6 +225,10 @@ button:hover {
   main {
     max-width: 40rem;
     grid: 0.5fr 0.5fr / auto-flow 0.5fr 0.5fr;
+  }
+
+  h3 {
+    padding: 1rem 0 0.5rem;
   }
 
   .description {
