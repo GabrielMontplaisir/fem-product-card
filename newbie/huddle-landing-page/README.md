@@ -7,13 +7,11 @@ This is a solution to the [Huddle landing page with single introductory section 
 - [Links](#links)
 - [Built with](#built-with)
 - [What I learned](#what-i-learned)
-- [Continued development](#continued-development)
-- [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/responsive-and-accessible-huddle-landing-page-using-flex-and-grid-nTX4v0rMkY](https://www.frontendmentor.io/solutions/responsive-and-accessible-huddle-landing-page-using-flex-and-grid-nTX4v0rMkY)
 - Live Site URL: [https://gabrielmontplaisir.com/frontend-mentor/newbie/huddle-landing-page](https://gabrielmontplaisir.com/frontend-mentor/newbie/huddle-landing-page)
 
 ## Built with
@@ -31,11 +29,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 Implemented some [Font Awesome](https://fontawesome.com/) icons. Instead of applying my own CSS styles to the border, I decided to try to override the `--fa-border-<style>` defaults. This worked well. However, you quickly realize that the icons aren't all the same size. I then tried to apply the `fa-fw` class, which gives a constant width to all icons, but it doesn´t play well with the `fa-border` class. Instead, I set a constant `width: 2.125rem` (around 34px) and this fixed the border issues.
 
-## Continued development
-
-## Useful resources
-
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
+I was having trouble having everything blend nicely at certain widths (from 860px to 1200px mostly). I was trying to avoid having the image scale to 100%, but I also didn't want to limit the desktop version. I ended up creating two separate media queries, and then setting everything in a grid and adjusting the font-sizes to be quasi-pixel perfect with my dimensions. I'm sure there's a better way to do this, but I haven't practiced my HTML + CSS in a while, so I may leave it for later.
 
 ## Author
 

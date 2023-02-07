@@ -7,6 +7,7 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 ## Newbie
 
 - [Four Card Feature Section](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/four-card-section) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/four-card-section))
+- [Huddle Landing Page](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/huddle-landing-page) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/huddle-landing-page))
 - [NFT Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/nft-preview-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/nft-preview-card))
 - [Order Summary Card](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/order-summary-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/order-summary-card))
 - [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/product-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/product-card))
