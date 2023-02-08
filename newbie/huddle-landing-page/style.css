@@ -138,11 +138,10 @@ body {
   background: var(--clr-primary-violet) url(./images/bg-mobile.svg) top/contain
     no-repeat;
   padding: 2.25rem;
+  display: grid;
+  place-content: center;
+  align-content: space-around;
   text-align: center;
-}
-
-header {
-  padding-bottom: 3.25rem;
 }
 
 header img {
@@ -150,33 +149,34 @@ header img {
 }
 
 main img {
-  margin-inline: auto;
+  margin: auto;
 }
 
 .description {
-  padding-top: 2.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: clamp(1rem, calc(0.75rem + 0.5vw), 1.15rem);
+  margin-top: 3rem;
+  gap: 1.5rem;
 }
 
 h1 {
-  padding: 1rem;
-  font-size: clamp(1.5rem, calc(1.2rem + 1.35vw), 4.5rem);
+  font-size: clamp(1.5rem, calc(1.35rem + 1.5vw), 2.5rem);
   font-weight: var(--fw-bold);
   font-family: var(--ff-headings);
 }
 
-p {
-  font-size: clamp(1rem, calc(0.75rem + 0.49vw), 1.16rem);
-}
-
 button {
-  margin-top: 1.5rem;
   font-family: var(--ff-headings);
   color: var(--clr-primary-violet);
-  font-size: 0.813rem;
-  padding: 0.75rem 5rem;
+  font-size: clamp(0.813rem, calc(0.65rem + 0.4vw), 1.15rem);
+  padding: 0.75rem 4.625rem;
+  max-width: 12.5rem;
   border-radius: 2rem;
   cursor: pointer;
   box-shadow: 0.125rem 0.188rem 0.313rem 0.125rem hsl(257, 40%, 42%);
+  transition: background ease 0.3s, color ease 0.3s;
 }
 
 button:hover {
@@ -188,7 +188,6 @@ footer ul {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  padding-top: 4rem;
 }
 
 i {
@@ -199,6 +198,7 @@ i {
 i:hover {
   --fa-border-color: var(--clr-primary-magenta);
   color: var(--clr-primary-magenta);
+  transition: all ease 0.3s;
 }
 
 /* **************** */
@@ -215,13 +215,8 @@ i:hover {
 /* At 860px */
 @media (min-width: 53.75em) {
   body {
-    max-width: 81rem;
     background: var(--clr-primary-violet) url("./images/bg-desktop.svg")
       center/cover no-repeat;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
 
   header img {
@@ -229,37 +224,37 @@ i:hover {
   }
 
   main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
+    max-width: 81rem;
+    display: flex;
     text-align: start;
     gap: 3rem;
   }
 
   main img {
+    flex: 0.55;
     max-width: 100%;
+    width: 50%;
   }
 
   .description {
-    padding-top: 0;
-    padding-right: 2rem;
+    flex: 0.45;
+    align-items: start;
   }
 
   h1 {
-    padding: 0;
+    padding-right: 2rem;
   }
 
   button {
-    font-size: var(--fs-paragraph);
     padding: 0.9rem 4rem;
   }
 
-  footer {
-    padding-top: 3rem;
+  footer ul {
+    justify-content: end;
   }
 
-  footer ul {
-    padding-top: 0;
-    justify-content: end;
+  i {
+    font-size: 1.25rem;
+    width: 2.35rem;
   }
 }
