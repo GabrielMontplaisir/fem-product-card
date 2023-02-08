@@ -241,7 +241,7 @@ i:hover {
     align-items: start;
   }
 
-  h1 {
+  .description > *:not(:last-child) {
     padding-right: 2rem;
   }
 
