@@ -25,21 +25,29 @@
     <!-- Rating state start -->
     <main>
       <section id="feedback">
-        <img class="circle" src="./images/icon-star.svg" alt="" />
+        <img src="./images/icon-star.svg" alt="" />
         <h2>How did we do?</h2>
         <p>
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <div class="ratings-container">
-          <input type="radio" name="rating" value="1" aria-label="1" />
-          <input type="radio" name="rating" value="2" aria-label="2" />
-          <input type="radio" name="rating" value="3" aria-label="3" />
-          <input type="radio" name="rating" value="4" aria-label="4" />
-          <input type="radio" name="rating" value="5" aria-label="5" />
-        </div>
-        <div id="errorText" class="hidden">Please select a rating</div>
-        <button id="submitBtn" type="submit">Submit</button>
+        <form id="form-container">
+          <fieldset>
+            <legend class="sr-only">Select a rating</legend>
+            <input type="radio" name="rating" id="one" value="1" />
+            <label class="rating-number" for="one">1</label>
+            <input type="radio" name="rating" id="two" value="2" />
+            <label class="rating-number" for="two">2</label>
+            <input type="radio" name="rating" id="three" value="3" />
+            <label class="rating-number" for="three">3</label>
+            <input type="radio" name="rating" id="four" value="4" />
+            <label class="rating-number" for="four">4</label>
+            <input type="radio" name="rating" id="five" value="5" />
+            <label class="rating-number" for="five">5</label>
+          </fieldset>
+          <!-- <div id="errorText" class="hidden">Please select a rating</div> -->
+          <button id="submitBtn" type="submit" disabled>Submit</button>
+        </form>
         <!-- Rating state end -->
       </section>
       <section id="confirmation" class="hidden">
