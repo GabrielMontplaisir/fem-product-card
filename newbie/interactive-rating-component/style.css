@@ -192,7 +192,7 @@ input {
 }
 
 input::before {
-  content: attr(label);
+  content: attr(aria-label);
 }
 
 input:hover {
