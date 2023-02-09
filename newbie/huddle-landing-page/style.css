@@ -167,10 +167,12 @@ h1 {
   font-family: var(--ff-headings);
 }
 
-button {
+.description a {
   font-family: var(--ff-headings);
+  background: white;
   color: var(--clr-primary-violet);
   font-size: clamp(0.813rem, calc(0.65rem + 0.4vw), 1.15rem);
+  text-decoration: none;
   padding: 0.75rem 4.625rem;
   max-width: 12.5rem;
   border-radius: 2rem;
@@ -179,7 +181,7 @@ button {
   transition: background ease 0.3s, color ease 0.3s;
 }
 
-button:hover {
+.description a:hover {
   background: var(--clr-primary-magenta);
   color: white;
 }
@@ -245,7 +247,7 @@ i:hover {
     padding-right: 2rem;
   }
 
-  button {
+  .description a {
     padding: 0.9rem 4rem;
   }
 
