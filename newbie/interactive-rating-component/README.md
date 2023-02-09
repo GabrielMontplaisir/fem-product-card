@@ -11,7 +11,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ## Links
 
-- Solution URL:
+- Solution URL: [https://www.frontendmentor.io/solutions/semantic-interactive-rating-component-using-radio-buttons-oXKiQfNfPZ](https://www.frontendmentor.io/solutions/semantic-interactive-rating-component-using-radio-buttons-oXKiQfNfPZ)
 - Live Site URL: [https://gabrielmontplaisir.com/frontend-mentor/newbie/interactive-rating-component](https://gabrielmontplaisir.com/frontend-mentor/newbie/interactive-rating-component)
 
 ## Built with
