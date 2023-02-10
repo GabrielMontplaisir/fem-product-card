@@ -12,8 +12,13 @@ form.addEventListener("submit", (e) => {
   e.preventDefault();
   const selection = form.rating.value;
   ratingText.innerText = selection;
-  confirmCard.classList.remove("hidden");
+  feedbackCard.classList.add("slide-out");
+});
+
+feedbackCard.addEventListener("animationend", () => {
   feedbackCard.classList.add("hidden");
+  confirmCard.classList.remove("hidden");
+  confirmCard.classList.add("slide-in");
 });
 
 ratings.forEach((r) => {

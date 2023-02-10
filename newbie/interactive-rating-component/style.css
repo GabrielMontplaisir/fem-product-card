@@ -145,6 +145,7 @@ main {
   background: var(--clr-neutral-dark-blue);
   border-radius: 1.75rem;
   padding: 1.4rem;
+  overflow: hidden;
 }
 
 h2 {
@@ -190,13 +191,13 @@ input + label {
   transition: 0.3s;
 }
 
-input:checked + label {
-  background: var(--clr-neutral-lgrey);
+input:is(:hover, :focus-visible) + label {
+  background: var(--clr-primary-orange);
   color: var(--clr-neutral-white);
 }
 
-input + label:hover {
-  background: var(--clr-primary-orange);
+input:checked + label {
+  background: var(--clr-neutral-lgrey);
   color: var(--clr-neutral-white);
 }
 
@@ -213,7 +214,7 @@ button {
   transition: 0.3s;
 }
 
-button:hover {
+button:is(:hover, :focus-visible) {
   background: var(--clr-neutral-white);
   color: var(--clr-primary-orange);
 }
@@ -229,8 +230,9 @@ button:disabled {
 
 #confirmation {
   text-align: center;
-  /* padding: 1.25rem; */
   margin-bottom: 1rem;
+  transform: translateX(110%);
+  -webkit-transform: translateX(110%);
 }
 
 #confirmation img {
@@ -245,6 +247,50 @@ button:disabled {
   padding-block: 0.3rem 0.2rem;
   border-radius: 1rem;
 }
+
+/* Keyframe Animations */
+
+.slide-in {
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+}
+
+.slide-out {
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+}
+
+@keyframes slide-in {
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes slide-in {
+  100% {
+    -webkit-transform: translateX(0%);
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-110%);
+  }
+}
+
+@-webkit-keyframes slide-out {
+  0% {
+    -webkit-transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(-110%);
+  }
+}
+
+/* Media Queries */
 
 @media (min-width: 25em) {
   main {
