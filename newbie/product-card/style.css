@@ -129,6 +129,7 @@ body {
 main {
   display: flex;
   max-width: 37.5rem;
+  border-radius: 0.75rem;
   overflow: hidden;
   background-color: var(--clr-neutral-white);
   color: var(--clr-neutral-gray-blue);
