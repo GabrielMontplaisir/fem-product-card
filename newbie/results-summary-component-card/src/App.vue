@@ -1,5 +1,5 @@
 <script>
-import json from "./data/data.json";
+import json from "../assets/data/data.json";
 import category from "./components/category.vue";
 
 export default {
