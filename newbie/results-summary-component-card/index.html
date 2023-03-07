@@ -13,26 +13,38 @@
     />
 
     <title>Frontend Mentor | Results summary component</title>
+
+    <!-- These scripts make loading Google Fonts faster. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- In the event the variable font doesn't work, you still want to load the font manually. You still want to add the <link>, as shown below. -->
     <link
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
 
-
-    <script type="importmap">
+    <!-- Call the ES Modules for "vue" by adding an importmap type script and calling the CDN below. Add (.prod) and (.runtime) when ready for production. -->
+    <!-- <script type="importmap">
       {
         "imports": {
           "vue": "https://unpkg.com/vue@3/dist/vue.runtime.esm-browser.prod.js"
         }
       }
-    </script>
-    <script type="module" crossorigin src="/frontend-mentor/newbie/results-summary-component-card/dist/index-64cda1c3.js"></script>
-    <link rel="stylesheet" href="/frontend-mentor/newbie/results-summary-component-card/dist/index-ba55d404.css">
+    </script> -->
+    <script
+      type="module"
+      crossorigin
+      src="/frontend-mentor/newbie/results-summary-component-card/dist/index-8b3f8f15.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="/frontend-mentor/newbie/results-summary-component-card/dist/index-7e3017fc.css"
+    />
   </head>
   <body>
+    <!-- The "app" id is what will generate the rest of the html via App.vue -->
     <main id="app"></main>
-    
+    <!-- In order for App.vue to generate the rest of the content, we call main.js and import Vue. Needs to be placed as a defer, or AFTER the "app" id -->
   </body>
 </html>

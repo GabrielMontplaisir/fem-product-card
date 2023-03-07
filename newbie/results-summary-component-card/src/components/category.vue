@@ -23,7 +23,7 @@ export default {
 -->
 <template>
   <li v-bind:class="category">
-    <img class="icon" v-bind:src="icon" />
+    <img class="icon" v-bind:src="icon" alt="" aria-hidden="true" />
     <h3 class="category-title">{{ category }}</h3>
     <p class="category-score">{{ score }} <span> / 100</span></p>
   </li>
