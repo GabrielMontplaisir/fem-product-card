@@ -13,6 +13,7 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 - [Order Summary Card](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/order-summary-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/order-summary-card))
 - [Product Preview Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/product-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/product-card))
 - [Profile Card Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/profile-card-component) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/profile-card-component))
+- [Results Summary Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/results-summary-component-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/results-summary-component-card))
 - [QR Code Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/qr-code) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/qr-code))
 - [Single Price Grid Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/single-price-grid) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/single-price-grid))
 - [Social Proof Section](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/social-proof-section-master) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/social-proof-section-master))

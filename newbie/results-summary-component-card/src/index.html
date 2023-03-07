@@ -13,13 +13,18 @@
     />
 
     <title>Frontend Mentor | Results summary component</title>
+
+    <!-- These scripts make loading Google Fonts faster. -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- In the event the variable font doesn't work, you still want to load the font manually. You still want to add the <link>, as shown below. -->
     <link
       href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
       rel="stylesheet"
     />
 
+    <!-- Call the ES Modules for "vue" by adding an importmap type script and calling the CDN below. Add (.prod) and (.runtime) when ready for production. -->
     <script type="importmap">
       {
         "imports": {
@@ -29,7 +34,9 @@
     </script>
   </head>
   <body>
+    <!-- The "app" id is what will generate the rest of the html via App.vue -->
     <main id="app"></main>
+    <!-- In order for App.vue to generate the rest of the content, we call main.js and import Vue. Needs to be placed as a defer, or AFTER the "app" id -->
     <script type="module" crossorigin src="main.js"></script>
   </body>
 </html>

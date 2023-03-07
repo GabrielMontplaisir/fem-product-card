@@ -4,11 +4,14 @@
 
 :root {
   /* Primaries */
+  /* As this project occasionally played with opacity for hsl, it was easier to create one variable with just the hsl values */
+
   --hsl-red: 0, 100%, 67%;
   --hsl-yellow: 39, 100%, 56%;
   --hsl-teal: 166, 100%, 37%;
   --hsl-blue: 234, 85%, 45%;
 
+  /* Then, create a new set of variables with the hsl(var()) inside. */
   --clr-primary-red: hsl(var(--hsl-red));
   --clr-primary-yellow: hsl(var(--hsl-yellow));
   --clr-primary-teal: hsl(var(--hsl-teal));
@@ -160,6 +163,13 @@ a:not([class]) {
 /*  Variable Font */
 /* ************** */
 
+/* See README file for more details about variable fonts. 
+* We have to check if the browser @supports the font-variations. Call the font-family, then source.
+* Notice how src has two url(). The first uses the updated tech("variations"), but apparently this isn't fully supported.
+* As a fallback, we call the second url() with format("woff2-variations")
+* For this project, using a variable font was overkill, but I wanted to test it out anyways.
+* The font weight can support from 0 to 1000, but since the project only called for 500 - 800, I only called those.
+*/
 @supports (font-variation-settings: normal) {
   @font-face {
     font-family: "Hanken Grotesk", sans-serif;
@@ -171,10 +181,16 @@ a:not([class]) {
   }
 }
 
+/* The project initially came with a .ttf variable font. However, they're quite big. It's better to "compress" the file into a .woff2
+* using a converter. Check the link in the README files for a converter.
+*/
+
 /* *************** */
 /* CSS Starts here */
 /* *************** */
 
+/* Thankfully, the clamp for font-size was applicable in most areas for the component. */
+/* For variable fonts, we use the font-variation-settings attribute. This one only takes "wght". Other variable fonts can take more. */
 body {
   font-family: var(--ff-primary);
   font-size: clamp(1rem, 0.85rem + 0.5vw, var(--fs-default));
@@ -183,6 +199,7 @@ body {
   font-variation-settings: "wght" var(--fw-medium);
 }
 
+/* Was easier to call a variable for border radius and adjust as required. */
 main {
   --border-radius: 2rem;
   max-width: 46rem;
@@ -202,12 +219,17 @@ main {
   padding: 1.3rem 3rem 2.5rem;
 }
 
+/* Apparently, you don't want to create one large media query at the bottom of the css.
+* Instead, you want to call multiple where you can adjust the relevant classes as necessary.
+*/
+
 @media (min-width: 41.75em) {
   body {
     display: grid;
     place-content: center;
   }
 
+  /* An example where I wanted to call hsl() with an opacity, so had to reference one of the --hsl-* variables I created earlier. */
   main {
     grid-template-columns: 1fr 1fr;
     margin-inline: 1rem;
@@ -228,6 +250,7 @@ h2 {
   font-variation-settings: "wght" var(--fw-extrabold);
 }
 
+/* The aspect-ratio is important here so we have a nice "perfect circle" (imagine a square with a 50% border radius). */
 .score {
   display: grid;
   width: 9rem;
@@ -293,6 +316,10 @@ h2 {
   color: hsl(var(--hsl-gray-blue), 0.5);
 }
 
+/* These are important to determine the colours of the list items. As I'm calling the JSON and using the category as the class name, 
+* I had to capitalize the class here. You typically don't want to capitalize a class, but I didn't really have a choice unless I modified the
+* JSON file instead.
+*/
 .Reaction {
   background-color: hsl(var(--hsl-red), 0.05);
   color: var(--clr-primary-red);
@@ -330,6 +357,7 @@ button:is(:hover, :focus-visible) {
   background: var(--background-gradient);
 }
 
+/* Create a reverse linear gradient if the button is active. I don't know if there is a "reverse" function in CSS to simply call the var(). */
 button:active {
   background: linear-gradient(
     to top,
