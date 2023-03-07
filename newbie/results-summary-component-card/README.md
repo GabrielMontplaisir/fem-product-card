@@ -12,7 +12,7 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ## Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/results-summary-component-made-in-vuejs-using-json-data-4VvRd6M5vF](https://www.frontendmentor.io/solutions/results-summary-component-made-in-vuejs-using-json-data-4VvRd6M5vF)
 - Live Site URL: [https://gabrielmontplaisir.com/frontend-mentor/newbie/results-summary-component-card](https://gabrielmontplaisir.com/frontend-mentor/newbie/results-summary-component-card)
 
 ## Built with
@@ -31,11 +31,11 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 For a "newbie" project, I feel like this is the most complex project I've undertaken thus far.
 
-I really wanted to take advantage of implementing the data.json file provided by FEM and use it in the project instead of hard-coding the data in the HTML. At first, I was going to use some vanilla JS with some Jquery to get it done. Then, I was thinking of using the JS `FetchAPI()` to get the JSON data and add it to my HTML. This too proved to be a little more complex than inticipated. After considerable research, it almost felt simpler to use a JS framework. And honestly, I'm glad I did. I used VueJS, and it was easier than I thought.
+I really wanted to take advantage of implementing the data.json file provided by FEM and use it in the project instead of hard-coding the data in the HTML. At first, I was going to use some vanilla JS with some Jquery to get it done. Then, I was thinking of using the JS `FetchAPI()` to get the JSON data and add it to my HTML. This too proved to be a little more complex than anticipated. After considerable research, it almost felt simpler to use a JS framework. And honestly, I'm glad I did. I used VueJS, and it was easier than I thought.
 
-Lastly, I noticed that the project also came with some variable fonts. I wanted to try it out (it was really overkill as this project didn´t need variable fonts), just to learn how to use it a little bit.
+Lastly, I noticed that the project also came with some variable fonts. I wanted to try it out (it was overkill as this project didn´t need variable fonts), to learn how to use it a little bit.
 
-For everything that I've learned throughout this project, read through the comments, particularly in `vite.config.js`, and everything in the `src` folder.
+For everything I've learned throughout this project, read through the comments, particularly in `vite.config.js`, and everything in the `src` folder.
 
 ## Useful resources
 
