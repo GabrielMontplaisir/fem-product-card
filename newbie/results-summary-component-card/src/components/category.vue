@@ -24,7 +24,7 @@ export default {
 <template>
   <li v-bind:class="category">
     <img class="icon" v-bind:src="icon" alt="" aria-hidden="true" />
-    <h3 class="category-title">{{ category }}</h3>
+    <p class="category-title">{{ category }}</p>
     <p class="category-score">{{ score }} <span> / 100</span></p>
   </li>
 </template>
@@ -41,11 +41,11 @@ li {
   border-radius: 0.5rem;
 }
 
-li p {
+.category-title {
   margin-left: auto;
 }
 
-li span {
+.category-score span {
   padding-left: 0.25rem;
 }
 </style>
