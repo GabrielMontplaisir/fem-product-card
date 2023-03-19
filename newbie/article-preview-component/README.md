@@ -12,7 +12,7 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ## Links
 
-- Solution URL: []()
+- Solution URL: [https://www.frontendmentor.io/solutions/accessible-and-responsive-article-preview-component-using-scss-and-js-JtU9VwdSSx](https://www.frontendmentor.io/solutions/accessible-and-responsive-article-preview-component-using-scss-and-js-JtU9VwdSSx)
 - Live Site URL: [https://gabrielmontplaisir.com/frontend-mentor/newbie/article-preview-component](https://gabrielmontplaisir.com/frontend-mentor/newbie/article-preview-component)
 
 ## My process
@@ -32,15 +32,15 @@ This is a solution to the [Article preview component challenge on Frontend Mento
 
 ## What I learned
 
-Second project using SASS and SCSS. I decided to try using a `@mixin` for the headers and the author name.
+Second project using SASS and SCSS. I decided to try using a `@mixin` for the headers and the author's name.
 
-I wanted the tooltip to be "super-responsive" and make it scroll horizontally based on the size of the screen. This worked well when there wasn't enough padding on the right side. However, I wanted to make the arrow "stick" in one spot, and have the rest of the tooltip scroll horizontally once there was enough space (about `900px`). I eventually resolved myself to create multiple media queries and make it jump from one spot to the next. If anyone could guide me on how I could make it scroll horizontally from smaller screens to overlapping on larger ones, I'm all ears.
+I wanted the tooltip to be "super-responsive" and make it scroll horizontally based on the screen size. This worked well when there wasn't enough padding on the right side. However, I wanted to make the arrow "stick" in one spot, and have the rest of the tooltip scroll horizontally once there was enough space (about `900px`). I eventually resolved to create multiple media queries and make the tooltip jump from one spot to the next. If anyone could guide me on how I could make it scroll horizontally from smaller screens to overlapping on larger ones, I'm all ears.
 
-Styling the tooltip properly was also a bit of a struggle as the reference images actually shrink the card when the tooltip is toggled. Instead, I wanted to maintain the same height while centering the text to the button. I eventually found a "happy middle".
+Styling the tooltip correctly was also a struggle as the reference images shrink the card when the tooltip is toggled. Instead, I wanted to maintain the same height while centering the text on the button. I eventually found a "happy middle".
 
 I took advantage of the different "roles" and attributes (`aria-expanded`) applied to the Share section and the buttons for `transitions` and the JS, instead of creating a `.hidden` class.
 
-The Javascript was surprisingly the simple part. I added a couple event listeners to check whether the user clicks on the button, or outside the tooltip. For accessibilility reasons, tooltips also need to be allowed to be toggled "off" by pressing the `ESC` key.
+The Javascript was surprisingly the simple part. I added a couple of event listeners to check whether the user clicks on the button, or outside the tooltip. For accessibility reasons, tooltips also need to be allowed to be toggled "off" by pressing the `ESC` key.
 
 ## Author
 
