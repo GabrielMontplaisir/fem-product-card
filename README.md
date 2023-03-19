@@ -6,6 +6,7 @@ Generally speaking, if you find a folder / link in here, it's because I've succe
 
 ## Newbie
 
+- [Article Preview Component](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/article-preview-component) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/article-preview-component))
 - [FAQ Accordion Card](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/faq-accordion-card) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/faq-accordion-card))
 - [Four Card Feature Section](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/four-card-section) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/four-card-section))
 - [Huddle Landing Page](https://github.com/GabrielMontplaisir/frontend-mentor/tree/main/newbie/huddle-landing-page) ([Live](https://gabrielmontplaisir.com/frontend-mentor/newbie/huddle-landing-page))

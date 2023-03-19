@@ -1,0 +1,27 @@
+:root {
+  // Primaries
+  --hsl-grayish-blue: 212, 23%, 69%;
+  --clr-vdark-grayish-blue: hsl(217, 19%, 35%);
+  --clr-desat-dark-blue: hsl(214, 17%, 51%);
+  --clr-grayish-blue: hsl(var(--hsl-grayish-blue));
+  --clr-light-grayish-blue: hsl(210, 46%, 95%);
+
+  --ff-primary: "Manrope", sans-serif;
+
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  // 13px
+  --fs-default: 0.813rem;
+
+  // Transitions
+  --transition: all 0.4s ease;
+
+  // Padding for bottom sections
+  --share-padding-bottom: 2.2rem 1.25rem;
+}
+
+@mixin bold {
+  color: var(--clr-vdark-grayish-blue);
+  font-weight: var(--fw-bold);
+}
